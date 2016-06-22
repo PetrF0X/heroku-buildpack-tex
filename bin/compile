@@ -65,3 +65,16 @@ fi
 
 # Set up the environment for runtimes now that compilation has finished
 echo "export PATH=\$HOME/.texlive/bin/${PLATFORM}:\$PATH" >> $PROFILE_D
+
+build-step "Setting 2015 archive repository"
+tlmgr option repository ftp://tug.org/historic/systems/texlive/2015/tlnet-final
+build-step "Updating tlmgr"
+tlmgr update --self
+build-step "Installing ec"
+tlmgr install ec
+build-step "Installing xargs"
+tlmgr install xargs
+build-step "Installing bigfoot"
+tlmgr install bigfoot
+build-step "Installing babel-czech"
+tlmgr install babel-czech
