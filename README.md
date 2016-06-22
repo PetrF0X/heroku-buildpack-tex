@@ -3,12 +3,13 @@ Heroku buildpack: TeX
 
 This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks)
 for working with TeX documents. In its raw form, it simply bundles a working
-TeX Live environment into your Heroku app and doesn't do anything else with it.
+TeX Live environment into your Heroku app and adds the packages needed for
+compiling moderncv.
 
 
     $ ls
 
-    $ heroku create --buildpack git://github.com/mezis/heroku-buildpack-tex.git
+    $ heroku create --buildpack git://github.com/PetrF0X/heroku-buildpack-tex.git
 
     $ git push heroku master
     ...
