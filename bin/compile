@@ -78,3 +78,5 @@ build-step "Installing bigfoot"
 tlmgr install bigfoot
 build-step "Installing babel-czech"
 tlmgr install babel-czech
+build-step "Installing marvosym"
+tlmgr install marvosym
