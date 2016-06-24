@@ -80,3 +80,5 @@ build-step "Installing babel-czech"
 tlmgr install babel-czech
 build-step "Installing marvosym"
 tlmgr install marvosym
+build-step "Installing wallpaper"
+tlmgr install wallpaper
